@@ -18,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
 
         webView = findViewById(R.id.webview);
 
+       loadWebView();
 
+    }
+
+    private void loadWebView() {
         final WebSettings ajustesVisorWeb = webView.getSettings();
         ((WebSettings) ajustesVisorWeb).setJavaScriptEnabled(true);
 
         webView.loadUrl(url);
-
-
     }
 }
